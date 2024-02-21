@@ -68,11 +68,6 @@ Finally, compile this project and you can get ./rf_tcad file
 ./build
 ```
 ## Running Example
-You can run examples (open the )
-```
-cd example
-./run.sh
-```
 You can run the example and get the final results in log/test.log
 ```
 ./run.sh start
@@ -103,10 +98,10 @@ An example
 Format of DFG mapping
 ```
 ----------------------------------------[0]----------------------------------------
-|	  bank	  |	  PE	  |	  PE	  |	  PE	  |	  PE	  |  
-|	  bank	  |	  PE	  |	  PE	  |	  PE	  |	  PE	  |  
-|	  bank	  |	  PE	  |	  PE	  |	  PE	  |	  PE 	  |  
-|	  bank	  |	  PE	  |	  PE	  |	  PE	  |	  PE	  |  
+|   bank    |   PE    |   PE    |   PE    |   PE    |  
+|   bank    |   PE    |   PE    |   PE    |   PE    |  
+|   bank    |   PE    |   PE    |   PE    |   PE    |  
+|   bank    |   PE    |   PE    |   PE    |   PE    |  
 ------------------------------------------------------------------------------------
 Path[0]:(dependent edge)
 pre: (Label of the precursor node) ------  pos: (Label of the successor node) -----  latency: (The latency of edge)
@@ -115,10 +110,10 @@ Label of registers
 An example
 ```
 ----------------------------------------[0]----------------------------------------
-|	  5	  |		  |		  |		  |		  |  
-|	  0	  |	  4	  |		  |		  |		  |  
-|	  1	  |	  2	  |	  3	  |		  |		  |  
-|		  |		  |		  |		  |		  |  
+|   5   |     |     |     |     |  
+|   0   |   4   |     |     |     |  
+|   1   |   2   |   3   |     |     |  
+|     |     |     |     |     |  
 -----------------------------------------------------------------------------------
 Path[0]:
 pre:0  ------  pos:4  -----  latency:4
@@ -152,3 +147,5 @@ pre:4  ------  pos:5  -----  latency:1
   organization={IEEE}
 }
 ```
+
+
