@@ -1,0 +1,50 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I20240221 19:36:45.912973  8421 main.cpp:22] GLOG TEST!
+********************************
+the name of File:/home/huangl/workspace/RF_DATE//data/test.txt
+********************************
+the number of long latency:3
+the number of DFG's nodes:5
+the number of DFG's edge:7
+II:1
+FLAGS_pea_row :4 FLAGS_pea_column :4 FLAGS_childNum :4
+pre:0 ------- pos:1  ------- preIsRouted:0
+pre:0 ------- pos:1  ------- preIsRouted:1
+pre:0 ------- pos:2  ------- preIsRouted:1
+pre:0 ------- pos:3  ------- preIsRouted:1
+pre:1 ------- pos:2  ------- preIsRouted:0
+pre:2 ------- pos:3  ------- preIsRouted:0
+pre:3 ------- pos:4  ------- preIsRouted:0
+
+map成功
+
+========================map成功===========================
+----------------------------------------[0]----------------------------------------
+|	  4	  |	  3	  |		  |		  |		  |  
+|	  0	  |	  1	  |	  2	  |		  |		  |  
+|		  |		  |		  |		  |		  |  
+|		  |		  |		  |		  |		  |  
+-----------------------------------------------------------------------------------------
+Path[0]:
+pre:0  ------  pos:1  -----  latency:1
+25 28 26 27 
+Path[1]:
+pre:0  ------  pos:1  -----  latency:2
+25 28 26 27 
+Path[2]:
+pre:0  ------  pos:2  -----  latency:4
+25 34 35 36 32 33 
+Path[3]:
+pre:0  ------  pos:3  -----  latency:6
+25 28 29 30 31 3 1 2 
+Path[4]:
+pre:1  ------  pos:2  -----  latency:1
+27 37 32 33 
+Path[5]:
+pre:2  ------  pos:3  -----  latency:1
+33 9 4 1 2 
+Path[6]:
+pre:3  ------  pos:4  -----  latency:1
+2 10 0 
+--------------------------------------------
+spand time:0.028715
